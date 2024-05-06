@@ -1,5 +1,5 @@
 def add(a, b):
-    result = a + b
+    result = a - b
     return result
 
 def multiply(c, d):
@@ -10,8 +10,8 @@ def divide(e, f):
     if f == 0:
         result = "Cannot Divide by Zero."
     else:
-        result = e / f
-    return 0
+        result = f / e
+    return result
 
 def main():
     x = 6
@@ -25,9 +25,9 @@ def main():
 
     D = divide(x, y)
 
-    print("Result after addition:", z)
-    print("Result after multiplication:", w)
-    print("Result after division:", D)
+    print(x,"+",y," = ", z)
+    print(x,"*",y," = ", w)
+    print(x,"/",y," = ", D)
 
 if __name__ == "__main__":
     main()
